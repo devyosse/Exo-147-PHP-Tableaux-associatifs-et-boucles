@@ -26,3 +26,14 @@ $college = array(
 echo "10.Les élèves du collège : <br>";
 
 //Ajoutez votre code ici
+
+foreach ($college as $howmuch => $class) {
+    echo $howmuch;
+    echo "<br>";
+    foreach ($class as $name) {
+        foreach ($name as $surname) {
+            echo $surname. ", ";
+            echo "<br>";
+        }
+    }
+}
